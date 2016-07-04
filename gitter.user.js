@@ -5,3 +5,6 @@
 // @include     http://gitter.im/*
 // @include     https://gitter.im/*
 // ==/UserScript==
+var bodge = document.createElement("STYLE");
+bodge.appendChild(document.createTextNode(".notification-text{visibility:hidden; display:none;}"));
+document.body.appendChild(bodge);
